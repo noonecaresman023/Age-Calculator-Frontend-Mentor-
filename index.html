@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./stylesheet.css">
+  <title>🧮 Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <main>
+
+      <div class="date-container">
+        <div class="input-container">
+          <p id="day-input-label">DAY</p>
+          <input id="day-input" type="number" placeholder="DD" onfocus="this.value=''" autocomplete="off" required>
+          <p id="dayInput-p-error-state"> </p>
+        </div>
+        <div class="input-container">
+          <p id="month-input-label">MONTH</p>
+          <input id="month-input" type="number" placeholder="MM" onfocus="this.value=''" autocomplete="off" required>
+          <p id="monthInput-p-error-state"> </p>
+        </div>
+        <div class="input-container">
+          <p id="year-input-label">YEAR</p>
+          <input id="year-input" type="number" placeholder="YYYY" onfocus="this.value=''" autocomplete="off" required>
+          <p id="yearInput-p-error-state"></p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="calc-btn"><img src="./assets/images/icon-arrow.svg" alt="Button to view results"></button>
+      </div>
+
+      <div class="age-calculated-container">
+        <p> <span id="year-number"> - - </span> years</p>
+        <p> <span id="month-number"> - - </span> months</p>
+        <p> <span id="day-number"> - - </span> days</p>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
