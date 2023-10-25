@@ -213,4 +213,38 @@ button:active{
     }
 }
 
+@media screen and (max-width: 480px) {
+    /* Add your CSS rules for small phone screens here */
+    main {
+      min-width: auto; /* Remove the minimum width */
+      padding: 1em; /* Adjust padding as needed */
+      border-radius: 10px; /* Adjust border radius as needed */
+      overflow-x: auto; /* Hide horizontal overflow */
+    }
+  
+    .date-container {
+      flex-direction: row; /* Keep the date inputs in a row */
+      justify-content: space-between; /* Distribute the input containers horizontally */
+    }
+  
+    .input-container {
+      margin: 0.5rem; /* Reduce the margin around the input containers */
+      flex-grow: 1; /* Make the input containers take up available space */
+    }
+  
+    input[type=number] {
+      margin: 0.5rem 0; /* Adjust the margin for the number inputs */
+      width: calc(100% - 2em); /* Set the width to take up all available space with some padding */
+      font-size: 1.2rem; /* Adjust the font size for the input boxes */
+    }
+  
+    .age-calculated-container {
+      font-size: 2.5rem; /* Adjust font size as needed */
+    }
+  
+    .age-calculated-container > p > span {
+      font-size: 3rem; /* Adjust font size for the spans */
+    }
+  }
+
 
